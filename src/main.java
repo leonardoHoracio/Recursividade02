@@ -18,11 +18,11 @@ public class main {
 	}
 
 	private static int soma(int[] vet, int tamanho) {
-		if (tamanho == 0) {
+		if (tamanho == 0) { // se não houver posição no vetor. retorna zero
 			return 0;
 		} else {
-
-			if (vet[tamanho - 1] < 0) {
+			
+			if (vet[tamanho - 1] < 0) { // se for menor que zero. retorna 1
 				return 1 + soma(vet, tamanho - 1);
 			} else {
 				return 0 + soma(vet, tamanho - 1);
